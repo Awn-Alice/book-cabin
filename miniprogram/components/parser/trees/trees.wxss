@@ -1,0 +1,302 @@
+/* 在这里引入自定义样式 */
+
+/* 链接和图片效果 */
+._a {
+  display: inline;
+  padding: 1.5px 0 1.5px 0;
+  color: #366092;
+  word-break: break-all;
+}
+
+._hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+._visited {
+  color: #551a8b;
+}
+
+/* ._img {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+} */
+
+/* 内部样式 */
+:host {
+  display: inline;
+}
+
+._blockquote,
+._div,
+._p,
+._ul,
+._ol,
+._li {
+  display: block;
+}
+
+._b,
+._strong {
+  font-weight: bold;
+}
+
+._code {
+  font-family: monospace;
+}
+
+._del {
+  text-decoration: line-through;
+}
+
+._em,
+._i {
+  font-style: italic;
+}
+
+._h1 {
+  font-size: 2em;
+}
+
+._h2 {
+  font-size: 1.5em;
+}
+
+._h3 {
+  font-size: 1.17em;
+}
+
+._h5 {
+  font-size: 0.83em;
+}
+
+._h6 {
+  font-size: 0.67em;
+}
+
+._h1,
+._h2,
+._h3,
+._h4,
+._h5,
+._h6 {
+  display: block;
+  font-weight: bold;
+}
+
+._image {
+  display: block;
+  width: 100%;
+  height: 360px;
+  margin-top: -360px;
+  opacity: 0;
+}
+
+._ins {
+  text-decoration: underline;
+}
+
+._li {
+  flex: 1;
+  width: 0;
+}
+
+._ol-bef {
+  width: 36px;
+  margin-right: 5px;
+  text-align: right;
+}
+
+._ul-bef {
+  margin: 0 12px 0 23px;
+  line-height: normal;
+}
+
+._ol-bef,
+._ul-bef {
+  flex: none;
+  user-select: none;
+}
+
+._ul-p1 {
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  overflow: hidden;
+  line-height: 0.3em;
+}
+
+._ul-p2 {
+  display: inline-block;
+  width: 0.23em;
+  height: 0.23em;
+  border: 0.05em solid black;
+  border-radius: 50%;
+}
+
+._q::before {
+  content: '"';
+}
+
+._q::after {
+  content: '"';
+}
+
+._sub {
+  font-size: smaller;
+  vertical-align: sub;
+}
+
+._sup {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+.__bdi,
+.__bdo,
+.__ruby,
+.__rt {
+  display: inline-block;
+}
+
+._video {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 225px;
+  background-color: black;
+}
+
+._video::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+  content: '';
+  border-color: transparent transparent transparent white;
+  border-style: solid;
+  border-width: 15px 0 15px 30px;
+}
+
+
+
+/* 下面是粘贴过来的样式 */
+/* 这是列表页的样式 */
+._ol-bef, ._ul-bef {
+  display: none;
+}
+
+.book_list {
+  display: block;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+
+  clear: both;
+  margin: 0 auto;
+  padding: 4px 0 2px;
+}
+.book_item {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  height: 145px;
+  background: #FFF;
+  border-bottom: 1px #dbdbdb solid;
+}
+
+.a_item {
+  display: block;
+  max-height: 150px;
+  padding: 10px 5px;
+}
+.a_item:link, .a_item:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.img_item {
+  width: 87px !important;
+  height: 120px !important;
+}
+.img_item.book_cover {
+  float: left !important;
+  margin: 5px 10px 0 0 !important;
+  overflow: hidden;
+}
+.img_item {
+  border: 0 !important;
+  vertical-align: middle !important;
+}
+.p_item {
+  white-space: nowrap;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  font-size: 32rpx;
+}
+.p_item.book_title {
+  color: #333;
+  height: 25px;
+  line-height: 25px;
+  font-size: 32rpx;
+}
+.p_item .status {
+  color: #999999;
+  float: right;
+}
+.book_list .intro {
+  height: 54px;
+  color: #999;
+  line-height: 18px;
+  font-size: 26rpx;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.book_list .time {
+  font-size: 26rpx;
+}
+
+.bookcover{
+  min-height: 135px;
+  padding-left: 105px;
+  position: relative;
+}
+.pic {
+  width: 95px;
+  height: 135px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.title {
+  line-height: 22px;
+  font-size: 32rpx;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.gray {
+  color: #999;
+}
+
+/* 这是目录样式 */
+.catalog_item {
+  padding: 8px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.catalog_a {
+  max-height: none;
+  text-decoration: none;
+  color: #333;
+}
+/* 这是文章内容样式 */
+.article_p {
+  line-height: 1.5;
+  margin-bottom: 20rpx;
+  text-indent: 80rpx;
+}

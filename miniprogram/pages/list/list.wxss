@@ -1,0 +1,146 @@
+/* 下面是列表的样式 */
+.book_list {
+  display: block;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+
+  clear: both;
+  margin: 0 auto;
+  padding: 4px 0 2px;
+}
+.book_item {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  height: 145px;
+  background: #FFF;
+  border-bottom: 1px #dbdbdb solid;
+}
+
+.a_item {
+  display: block;
+  max-height: 150px;
+  padding: 10px 5px;
+}
+.a_item:link, .a_item:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+.img_item {
+  width: 87px;
+  height: 120px;
+}
+.img_item.book_cover {
+  float: left;
+  margin: 5px 10px 0 0;
+}
+.img_item {
+  border: 0;
+  vertical-align: middle;
+}
+.p_item {
+  white-space: nowrap;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  font-size: 32rpx;
+}
+.p_item.book_title {
+  color: #333;
+  height: 25px;
+  line-height: 25px;
+  font-size: 32rpx;
+}
+.p_item .status {
+  color: #999999;
+  float: right;
+}
+.book_list .intro {
+  height: 54px;
+  color: #999;
+  line-height: 18px;
+  font-size: 26rpx;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.book_list .time {
+  font-size: 26rpx;
+}
+/* 头部样式 */
+.header-box{
+  height: 40px;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #51b7ec;
+  color: #FFFFFF;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+}
+.header-right > .book-shelf {
+  margin-right: 20rpx;
+}
+
+
+/* 搜索页面 */
+.search-header{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  background: #cccccc;
+}
+.search-inp{
+  background: white;
+  padding-left: 20rpx;
+  flex: 1;
+  display: block;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+}
+.search-header button{
+  width: 140rpx;
+  height: 40px;
+  font-size: 32rpx;
+  line-height: 40px;
+  padding: 0;
+}
+.search-page {
+  position: fixed;
+  z-index: 100;
+  top: 40px; bottom: 0;
+  left: 0; right: 0;
+  background: #f6f6f6;
+}
+/* 内容样式 */
+.body-box {
+  height: calc(100% - 40px);
+}
+.scroll-view{
+  height: 100%;
+}
+
+/* 底部分页 */
+.bottom-box{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  line-height: 40px;
+  color: #51b7ec;
+}
+
+.bottom-box view{
+  flex: 1;
+  text-align: center;
+  text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="detail-box">
+  <scroll-view class="scroll-view" scroll-y scroll-top="{{scrollTop}}">
+    <mp-loading type="circle" show="{{isLoading}}"></mp-loading>
+    <parser html="{{detailDom}}" bindlinkpress="clickLink"/>
+    <view class="bottom-box" hidden="{{!detailDom}}">
+      <view wx:if="{{curPage>0}}" bindtap="prePage" class="pre-page">上一页</view>
+      <view class="next-page" bindtap="nextPage">下一页</view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,19 @@
+.article_box{
+  padding: 20rpx;
+  height: 100%;
+}
+.scroll_view{
+  height: 100%;
+}
+
+.article_bottom{
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  color: #51b7ec;
+  text-decoration: underline;
+}
+.article_bottom view{
+  flex: 1;
+  text-align: center;
+}

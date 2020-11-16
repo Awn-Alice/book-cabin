@@ -1,6 +1,5 @@
 // miniprogram/pages/article/article.js
 Page({
-
   /**
    * 页面的初始数据
    */

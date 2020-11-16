@@ -6,7 +6,7 @@ Page({
    */
   data: {
     code: '',
-    page: 1,
+    curPage: 1,
     detailDom: '',
     isLoading: false,
     scrollTop: 0
@@ -17,6 +17,20 @@ Page({
     // a 标签的href值就是具体文章的请求路径
     wx.navigateTo({
       url: `/pages/article/article?url=${e.detail.href}`,
+    })
+  },
+  prePage() {
+    this.getDetail(this.data.code, this.data.curPage-1)
+    this.setData({
+      curPage: this.data.curPage-1,
+      scrollTop: 0
+    })
+  },
+  nextPage() {
+    this.getDetail(this.data.code, this.data.curPage+1)
+    this.setData({
+      curPage: this.data.curPage+1,
+      scrollTop: 0
     })
   },
   getDetail(code, page) {
@@ -39,6 +53,6 @@ Page({
   onLoad: function (options) {
     const {code} = options
     this.setData({code: code})
-    this.getDetail(code, this.data.page)
+    this.getDetail(code, this.data.curPage)
   }
 })

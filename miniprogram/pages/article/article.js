@@ -28,6 +28,7 @@ Page({
       url: `/pages/detail/detail?code=${this.data.bookCode}`,
     })
   },
+
   getContent(bookCode, chapterNum) {
     this.setData({ isLoading: true })
     wx.cloud.callFunction({

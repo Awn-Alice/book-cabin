@@ -14,6 +14,7 @@ exports.main = async (event, context) => {
   const ret = await axios.get(`https://m.xiashuwu.com${url}`)
   const $ = cheerio.load(ret.data)
   $('.content .articlecon p').addClass('article_p')
+  
   let firstContent = ''
   let secondContent = ''
   const nextBtnText = $('.nextinfo').eq(0).text()
@@ -29,6 +30,7 @@ exports.main = async (event, context) => {
   } else {
     firstContent = $('.content .articlecon').html()
   }
-  
-  return firstContent + secondContent
+  const title = $('.content .titlename').text()
+  const content = firstContent + secondContent
+  return {title, content }
 }

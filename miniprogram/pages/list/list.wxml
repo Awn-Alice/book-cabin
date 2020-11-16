@@ -11,7 +11,7 @@
 </view>
 <view class="body-box">
   <scroll-view scroll-y scroll-top="{{scrollTop}}" class="scroll-view">
-    <mp-loading type="circle" show="{{isLoading}}"></mp-loading>
+    <!-- <mp-loading type="circle" show="{{isLoading}}"></mp-loading> -->
     <parser lazy-load html="{{listDom}}" bindlinkpress="clickLink"/>
     <view class="bottom-box" hidden="{{!listDom}}">
       <view wx:if="{{curPage>1}}" bindtap="prePage" class="pre-page">{{curPage>1?'上一页':''}}</view>

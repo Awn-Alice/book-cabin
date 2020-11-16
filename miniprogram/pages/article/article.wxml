@@ -5,7 +5,7 @@
       <view bindtap="goToDetail">目录</view>
       <view bindtap="nextChapter">下一章</view>
     </view>
-    <mp-loading type="circle" show="{{isLoading}}"></mp-loading>
+    <!-- <mp-loading type="circle" show="{{isLoading}}"></mp-loading> -->
     <parser html="{{content}}" bindload="contentLoaded"></parser>
     <view wx:if="{{isRender}}" class="article_bottom">
       <view bindtap="preChapter">上一章</view>

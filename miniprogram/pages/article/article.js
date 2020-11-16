@@ -40,6 +40,7 @@ Page({
       })
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -49,7 +50,7 @@ Page({
     const chapterNum = url.match(/read_(\S*).html/)[1]
     const bookCode = url.match(/(\S*)read_/)[1];
 
-    this.setData({chapterNum, bookCode})
+    this.setData({ chapterNum, bookCode })
     this.getContent(bookCode, chapterNum)
     // 等接口返回content后，再让下面的导航显示出来
     setTimeout(() => {

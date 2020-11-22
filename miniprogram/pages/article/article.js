@@ -16,7 +16,7 @@ Page({
   },
   preChapter() {
     this.getContent(this.data.chapterNum - 1)
-    this.setData({ chapterNum: this.data.chapterNum - 1 })
+    this.setData({ chapterNum: this.data.chapterNum - 1, scrollTop: 0 })
   },
   nextChapter() {
     this.getContent(this.data.chapterNum / 1 + 1)

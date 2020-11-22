@@ -286,16 +286,19 @@
 
 /* 这是目录样式 */
 .catalog_item {
-  padding: 8px 0;
+  padding: 20rpx 32rpx;
   border-bottom: 1px solid #e6e6e6;
 }
 .catalog_a {
+  display: block;
   max-height: none;
   text-decoration: none;
   color: #333;
 }
 /* 这是文章内容样式 */
 .article_p {
+  padding: 0 32rpx;
+  font-size: 36rpx;
   line-height: 1.5;
   margin-bottom: 20rpx;
   text-indent: 80rpx;

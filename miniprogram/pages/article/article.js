@@ -60,6 +60,6 @@ Page({
       if (!this.data.isRender) {
         this.setData({ isRender: true })
       }
-    }, 5000);
+    }, 30000);
   }
 })

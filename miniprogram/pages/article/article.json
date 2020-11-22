@@ -2,5 +2,6 @@
   "usingComponents": {
     "parser":"/components/parser/parser",
     "mp-loading": "/miniprogram_npm/weui-miniprogram/loading/loading"
-  }
+  },
+  "navigationBarTitleText": "茶余偶读"
 }

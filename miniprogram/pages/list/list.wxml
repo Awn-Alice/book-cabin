@@ -7,7 +7,7 @@
 </view>
 <view hidden="{{!isSearch}}" class="search-header">
   <input class="search-inp" type="text" confirm-type="search" bindinput="{{inputHandler}}" bindconfirm="{{searchHandler}}" />
-  <button bindtap="cancelSearch">取消</button>
+  <button class="cancel-btn" bindtap="cancelSearch">取消</button>
 </view>
 <view class="body-box">
   <scroll-view scroll-y scroll-top="{{scrollTop}}" class="scroll-view">

@@ -74,10 +74,11 @@ Page({
   },
   searchHandler(e) {
     if (e.detail.value === '123') {
-      this.getList()
       // 收起键盘
       wx.hideKeyboard()
+      this.setData({ isSearch: false })
       this.getList()
+      console.log('bulingbuling')
     }
   },
 

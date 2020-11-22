@@ -94,7 +94,6 @@
 .search-header{
   height: 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 20rpx;
   background: #cccccc;
@@ -108,9 +107,10 @@
   border-radius: 10rpx;
   font-size: 24rpx;
 }
-.search-header button{
+.search-header .cancel-btn{
   width: 140rpx;
   height: 40px;
+  margin-left: auto;
   font-size: 32rpx;
   line-height: 40px;
   padding: 0;
